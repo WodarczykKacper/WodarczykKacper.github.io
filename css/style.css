@@ -1,11 +1,13 @@
 body {
     margin: 0;
     box-sizing: border-box;
-    background-color: #25768e;
-    color:#a3268b;
     
+/*    background-color: #25768e;*/
+/*    color:#a3268b;*/
+/*    color:#F35943;*/
+/*    color:#98465f;*/
 /*    49339D */
-}
+    }
 
 header {
     height: 10vh;
@@ -13,38 +15,94 @@ header {
 
 #menu {
     display: flex;
-    margin-left: 30%;
+    margin-left: 40%;
 }
 
 .menuList {
     list-style: none;
     flex-direction: row;
     flex-basis: 15%;
-    font-size: 22px;
+    font-size: 20px;
     margin: 5%;
-    margin-top: 0;
+    margin-top: 2%;
 }
-h2{
+
+h2 {
     text-align: center;
-    font-size:3em;
+    font-size: 3em;
 }
 
 #home {
-    height: 90vh;    
+    height: 90vh;
+    position: relative;
+    width: 100%;
 }
 
-h1{
+.txt-type {
+    position: absolute;
+    left: 15%;
+    margin-right: 15%;
+    letter-spacing: 5px;
+}
+
+.txt {
+    border-right: 1px solid #777;
+}
+
+h1 {
     text-align: center;
-    margin-top:10%;
+    margin-top: 10%;
     font-size: 5em;
-    
-}
-#aboutMe {
-    height: 100vh;
+
 }
 
+.seeMore {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    right: 40%;
+    width: 20%;
+    border: 2px solid black;
+    text-align: center;
+    height: 15%;
+    line-height: 80px;
+    font-size: 28px;
+}
+
+#aboutMe {
+    height: 150vh;
+}
+
+#aboutWraper{
+    height: 90vh;
+    width: 500px;
+    display: flex; 
+    flex-wrap:wrap;
+    flex-direction: row;
+}
+.aboutBox{
+    height: 350px;
+    flex-basis: 25%;
+    flex-direction: row;
+    background-color: aqua;
+}
+#counter{
+    height:15vh;
+    width: 100%;
+}
 #skills {
     height: 100vh;
+}
+
+#skillWraper{
+    display: flex;
+}
+
+.skill {
+    flex-basis: 20%;
+    flex-direction: row;
+    margin-top: 10%;
+    flex-wrap: wrap;
 }
 
 #projects {
