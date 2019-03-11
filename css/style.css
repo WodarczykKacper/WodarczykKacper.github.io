@@ -108,6 +108,7 @@ h2 {
     margin-top: 10%;
     letter-spacing: 5px;
     color: #b4a048;
+    color: white;
     font-family: 'Orbitron', sans-serif;
     font-weight: 200;
 
@@ -120,10 +121,8 @@ h2 {
 
 h1 {
     text-align: center;
-    /*    margin-top: 10%;*/
     color: beige;
     font-size: 5em;
-
 }
 
 .seeMore {
@@ -132,7 +131,7 @@ h1 {
     left: 40%;
     right: 40%;
     width: 23%;
-    border: 2px solid #CC7581;
+    border: 2px solid #fff;
     color: #CC7581;
     text-align: center;
     height: 15%;
@@ -290,17 +289,36 @@ h1 {
     background-image: url(img/canvas%20gravitation.png);
 }
 #footer {
-    height: 100vh;
+    height: 90vh;
     width: 100%;
-}
-
-#map {
-    height: 100%;
+    background: linear-gradient(#372d3b,#CC7581);
     position: relative;
 }
+#footer::before{
+    content: '';
+    background-image: url(img/wave.png);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 250px;
+/*    background-repeat: no-repeat;*/
+    background-size: cover;
+    background-position: right;
+    z-index: 9999999999;
+}
+
+/*
+#map {
+    position: relative;
+}
+*/
+/*
 iframe{
     filter: grayscale(1);
 }
+*/
+/*
 #staticSocial{
     position: absolute;
     top: 0;
@@ -309,28 +327,50 @@ iframe{
     height: 75%;
     background-color: red;
 }
+*/
 
 #socials{
-    width:10%;
-    height: 50%;
-    position: absolute;
-    top:5%;
-    right: 30%;
     list-style: none;
+    display: flex;
+    position: relative;
+    height: 30vh;
+    margin-left:60%;
+    margin-top: 5%;
 }
 .social{
-    height: 10%;
-/*    margin: 5%;*/
-    border: 1px solid black;
-/*    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);*/
+    height: 100px;
+    width: 100px;
+/*    margin:10%;*/
+    transform: rotate(45deg);
     background-color: #0077b5;
-    transition: .5s all ease-in-out;
+    position: absolute;
+}
+#ld{
+    top:50%;
+}
+#phone{
+  left:120px;
+    top:20px;
+}
+#gh{
+  left: 200px;
+bottom: 0;
+}
+#fb{
+    left:280px;
+    top:20px;
+}
+#ig{
+    left:360px;
+    bottom: 0;
+}
+#gm{
+    left:200px;
+    top:-60px;
 }
 
-.social:hover{
-    transform: translateX(-100%);
-    height: 40%;
-}
+
+
 @media (max-width: 424px){
     body{
         margin: 0;

@@ -40,7 +40,6 @@ function headerBG(){
     const header = document.getElementById('header');
     let scrollPos = window.scrollY;
     if(scrollPos>0){
-//        header.style.backgroundColor = 'black';
         header.style.height = '8vh';
     }else{
         header.style.height = '0vh';
