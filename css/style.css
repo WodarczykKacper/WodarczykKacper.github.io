@@ -1,6 +1,7 @@
 body {
     margin: 0;
     box-sizing: border-box;
+    width: 100%;
     color: #CC7581;
 /*    background-color: #7DD6FF;*/
     background-color: #372d3b;
@@ -183,7 +184,7 @@ h1 {
     height: 10vh;
     width: 100%;
 }
-#counter > p {
+#counter > .counterP {
     width: 24%;
     margin-bottom: 3%;
     text-align: center;
@@ -290,6 +291,7 @@ h1 {
 }
 #footer {
     height: 100vh;
+    width: 100%;
 }
 
 #map {
@@ -313,14 +315,14 @@ iframe{
     height: 50%;
     position: absolute;
     top:5%;
-    right: 0%;
+    right: 30%;
     list-style: none;
 }
 .social{
     height: 10%;
-    margin: 5%;
+/*    margin: 5%;*/
     border: 1px solid black;
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+/*    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);*/
     background-color: #0077b5;
     transition: .5s all ease-in-out;
 }
@@ -333,9 +335,11 @@ iframe{
     body{
         margin: 0;
         padding: 0;
-        width: 100%:
+        width: 100%;
     }
-    
+    #header{
+        display: none;
+    }
     #menu{
         display: none;
     }
@@ -344,6 +348,9 @@ iframe{
         font-size:34px;
         padding-top: 15%;
         letter-spacing: 10px;
+    }
+    #home{
+        height: 110vh;
     }
     .seeMore{
     top: 60%;
