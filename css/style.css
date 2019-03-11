@@ -132,6 +132,7 @@ h1 {
     right: 40%;
     width: 23%;
     border: 2px solid #CC7581;
+    color: #CC7581;
     text-align: center;
     height: 15%;
     line-height: 80px;
@@ -167,6 +168,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    overflow: hidden;
 }
 
 .aboutBox {
@@ -182,7 +184,7 @@ h1 {
     width: 100%;
 }
 #counter > p {
-    width: 23%;
+    width: 24%;
     margin-bottom: 3%;
     text-align: center;
     display: inline-block;
@@ -230,12 +232,13 @@ h1 {
 }
 
 .portfolioExamples .img{
-        transition: 0.5s all ease-in-out;
+    transition: 0.5s all ease-in-out;
+    opacity: 0.5;
 
 }
 .portfolioExamples:hover .img {
     transform: scale(1.2);
-    opacity: 0.5;
+    opacity: 1;
 }
 .img{
     background-repeat: no-repeat;
@@ -243,6 +246,20 @@ h1 {
     background-position: center;
     height: 100%;
     width:100%;
+}
+.img::after{
+    content: '';
+    transition: 0.5s all ease-in-out;
+}
+.img:hover::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 30%;
+    background-color: #CC7581;
+    width: 100%;
+    transform: translateY(-20%)
 }
 #pic1{
     background-image: url(img/hala.png);
@@ -273,24 +290,39 @@ h1 {
 }
 #footer {
     height: 100vh;
-    position: relative;
 }
 
 #map {
-    filter: grayscale(2);
     height: 100%;
+    position: relative;
 }
-
+iframe{
+    filter: grayscale(1);
+}
+#staticSocial{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 25%;
+    height: 75%;
+    background-color: red;
+}
 
 #socials{
     width:10%;
-    background-color: red;
+    height: 50%;
     position: absolute;
-    top:30%;
+    top:5%;
     right: 0%;
     list-style: none;
 }
 .social{
     height: 10%;
-    padding: 5%;
+    margin: 5%;
+    border: 1px solid black;
+    transition: .5s all ease-in-out;
+}
+
+.social:hover{
+    transform: translateX(-100%);
 }
