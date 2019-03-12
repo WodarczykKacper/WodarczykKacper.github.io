@@ -366,6 +366,8 @@ iframe{
     transform: rotate(45deg) scale(1);
     position: absolute;
     transition: 0.5s;
+    background:linear-gradient(#CC7581, #C4415D);
+    color:white;
 }
 
 .social p {
@@ -374,40 +376,41 @@ iframe{
 
 #ld {
     top: 50%;
-    background-color: #0077b5;
+/*    background-color: #0077b5;*/
+
 }
 
 #phone {
     left: 120px;
     top: 20px;
-    background-color: green;
+/*    background-color: green;*/
 }
 
 #gh {
     left: 200px;
     bottom: 0;
-    background-color: black;
+/*    background-color: black;*/
 
 }
 
 #fb {
     left: 280px;
     top: 20px;
-    background-color: blue;
+/*    background-color: blue;*/
 
 }
 
 #ig {
     left: 360px;
     bottom: 0;
-    background-color: pink;
+/*    background-color: pink;*/
 
 }
 
 #gm {
     left: 200px;
     top: -60px;
-    background-color: red;
+/*    background-color: red;*/
 
 }
 
