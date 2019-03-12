@@ -461,7 +461,12 @@ iframe{
 
     .aboutBox {
         flex-basis: 100%;
-        height: 50vh;
+        height: 55vh;
+    }
+    h3{
+margin-top: 2%;}
+    .aboutBox > p{
+        margin:0% 5%;
     }
 
     #counter {
