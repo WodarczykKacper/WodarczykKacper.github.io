@@ -101,6 +101,3 @@ function smoothScroll() {
 //window.addEventListener('scroll', nav);
 //window.addEventListener('scroll', showArrow);
 
-
-
-
