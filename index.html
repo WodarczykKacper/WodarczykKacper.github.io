@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Portfolio</title>
@@ -11,7 +12,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="css/fontello-756d8aa0/css/fontello.css" rel="stylesheet" type="text/css">
     <link href="css/fontello-0c17f108/css/fontello.css" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Thasadith:400,400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Thasadith:400,400i" rel="stylesheet">
 </head>
 
 <body>
@@ -23,14 +24,19 @@
             <li class="menuList"><a href="#projects">Projekty</a></li>
             <li class="menuList"><a href="#footer">Kontakt</a></li>
         </ul>
+        <div id="menu-burger">
+            <div class="line" id="fline"></div>
+            <div class="line" id="sline"></div>
+            <div class="line" id="tline"></div>
+        </div>
     </header>
 
-    <!--    menu-->
     <section id="home">
         <div>
             <h1><span class="txt-type" data-wait="3000" data-words='["Kacper Wodarczyk Front-end Developer "]'></span></h1>
-            <!--        Hello, I am Kacper Wodarczyk i am aspiring front-end developer-->
-            <a href="#aboutMe"><p class="seeMore">Zobacz więcej!</p></a>
+            <a href="#aboutMe">
+                <p class="seeMore">Zobacz więcej!</p>
+            </a>
         </div>
     </section>
 
@@ -54,10 +60,10 @@
                 <p class="pAbout">Od 3 lat jestem barmanem(szefem baru) mimo oczywistego braku powiązania między tymi dwoma dziedzinami uważam, że to doświadczenie nauczyło mnie wielu ważnych rzeczy, jak kontakt z klientem, organizacja pracy oraz praca w zespole jak i nadzorowanie pracy całego zespołu. </p>
             </div>
             <div id="counter">
-               <div class="num">Godziny nauki <span class="number">2224</span></div>
-               <div class="num">Kubki wypitej kawy<span class="number">229</span></div>
-               <div class="num">Przeczytane posty na stackoverflow <span class="number">417</span></div>
-               <div class="num">Znalezione literówki<span class="number">364</span></div>
+                <div class="num">Godziny nauki <span class="number">2224</span></div>
+                <div class="num">Kubki wypitej kawy<span class="number">229</span></div>
+                <div class="num">Przeczytane posty na stackoverflow <span class="number">417</span></div>
+                <div class="num">Znalezione literówki<span class="number">364</span></div>
             </div>
         </div>
     </section>
@@ -67,91 +73,124 @@
     <section id="skills">
         <h2>Umiejętności</h2>
         <div id="skillWraper">
-            
+
             <div class="skill"><img src="css/img/html5.svg" height="100%" width="100%">
-            <p class="ps">Posiadam dobrą znajomość budowy html uznająć wszystkie przyjęte zasady semantyki oraz seo</p></div>
+                <p class="ps">Posiadam dobrą znajomość budowy html uznająć wszystkie przyjęte zasady semantyki oraz seo</p>
+            </div>
             <div class="skill"><img src="css/img/css-5.svg" height="100%" width="100%">
-            <p class="ps">Posiadam dobrą znajomość budowy html uznająć wszystkie przyjęte zasady semantyki oraz seo</p></div>
+                <p class="ps">Posiadam dobrą znajomość budowy html uznająć wszystkie przyjęte zasady semantyki oraz seo</p>
+            </div>
             <div class="skill"><img src="css/img/logo-javascript.svg" height="100%" width="100%">
-            <p class="ps">Posiadam dobrą znajomość budowy html uznająć wszystkie przyjęte zasady semantyki oraz seo</p></div>
-            <div class="skill"><img src="css/img/es6.svg" height="100%" width="50%">
-            <p class="ps">Posiadam dobrą znajomość budowy html uznająć wszystkie przyjęte zasady semantyki oraz seo</p></div>
-            <div class="skill"><img src="css/img/github-icon-1.svg" height="100%" width="50%">
-            <p class="ps">Posiadam dobrą znajomość budowy html uznająć wszystkie przyjęte zasady semantyki oraz seo</p></div>
-            <div class="skill"><img src="css/img/react.svg" height="100%" width="50%">
-            <p class="ps">Posiadam dobrą znajomość budowy html uznająć wszystkie przyjęte zasady semantyki oraz seo</p></div>
+                <p class="ps">Posiadam dobrą znajomość budowy html uznająć wszystkie przyjęte zasady semantyki oraz seo</p>
+            </div>
+            <div class="skill"><img class="imgSkill" src="css/img/es6.svg" height="100%" width="100%">
+                <p class="ps">Posiadam dobrą znajomość budowy html uznająć wszystkie przyjęte zasady semantyki oraz seo</p>
+            </div>
+            <div class="skill"><img class="imgSkill"src="css/img/github-icon-1.svg" height="100%" width="100%">
+                <p class="ps">Posiadam dobrą znajomość budowy html uznająć wszystkie przyjęte zasady semantyki oraz seo</p>
+            </div>
+            <div class="skill"><img class="imgSkill" src="css/img/react.svg" height="100%" width="100%" >
+                <p class="ps">Posiadam dobrą znajomość budowy html uznająć wszystkie przyjęte zasady semantyki oraz seo</p>
+            </div>
             <div class="skill"><img src="css/img/wordpress-blue.svg" height="100%" width="100%">
-            <p class="ps">Posiadam dobrą znajomość budowy html uznająć wszystkie przyjęte zasady semantyki oraz seo</p></div>
+                <p class="ps">Posiadam dobrą znajomość budowy html uznająć wszystkie przyjęte zasady semantyki oraz seo</p>
+            </div>
             <div class="skill"><img src="css/img/1024px-The_GIMP_icon_-_gnome.svg.png" height="100%" width="65%">
-            <p class="ps">Posiadam dobrą znajomość budowy html uznająć wszystkie przyjęte zasady semantyki oraz seo</p></div>
+                <p class="ps">Posiadam dobrą znajomość budowy html uznająć wszystkie przyjęte zasady semantyki oraz seo</p>
+            </div>
             <div class="skill"><img src="css/img/less.svg" height="100%" width="100%">
-            <p class="ps">Posiadam dobrą znajomość budowy html uznająć wszystkie przyjęte zasady semantyki oraz seo</p></div>
+                <p class="ps">Posiadam dobrą znajomość budowy html uznająć wszystkie przyjęte zasady semantyki oraz seo</p>
+            </div>
             <div class="skill"><img src="css/img/sass-1.svg" height="100%" width="100%">
-            <p class="ps">Posiadam dobrą znajomość budowy html uznająć wszystkie przyjęte zasady semantyki oraz seo</p></div>
+                <p class="ps">Posiadam dobrą znajomość budowy html uznająć wszystkie przyjęte zasady semantyki oraz seo</p>
+            </div>
             <div class="skill"><img src="css/img/jquery-1.svg" height="100%" width="100%">
-            <p class="ps">Posiadam dobrą znajomość budowy html uznająć wszystkie przyjęte zasady semantyki oraz seo</p></div>
+                <p class="ps">Posiadam dobrą znajomość budowy html uznająć wszystkie przyjęte zasady semantyki oraz seo</p>
+            </div>
             <div class="skill"><img src="css/img/nodejs.svg" height="100%" width="100%">
-            <p class="ps">Posiadam dobrą znajomość budowy html uznająć wszystkie przyjęte zasady semantyki oraz seo</p></div>
+                <p class="ps">Posiadam dobrą znajomość budowy html uznająć wszystkie przyjęte zasady semantyki oraz seo</p>
+            </div>
 
         </div>
     </section>
-<!--     prace-->
+    <!--     prace-->
     <section id="projects">
         <h2>Moje projekty</h2>
         <div id="projectsWrapper">
             <div class="portfolioExamples">
                 <div class="img" id="pic1">
-                    <span class="desc"></span>
+                    <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae turpis diam. Vivamus ut sagittis magna. Cras velit mauris, tristique ut laoreet et, tincidunt suscipit elit. Mauris eget leo a neque tempus dapibus vel rutrum arcu. Integer nec erat auctor augue faucibus rutrum in non mi. Maecenas at mi dui. Nulla non porta magna. Pellentesque ac sapien vel tortor vehicula semper. Proin molestie orci non varius viverra. Nulla facilisis purus eros, quis ullamcorper dolor mattis sit amet. Cras condimentum nisl sed est convallis congue. <a href="">Kod</a><a href="">Live</a>
+                    </div>
                 </div>
             </div>
             <div class="portfolioExamples">
                 <div class="img" id="pic2">
-                    <span class="desc"></span>
+                    <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae turpis diam. Vivamus ut sagittis magna. Cras velit mauris, tristique ut laoreet et, tincidunt suscipit elit. Mauris eget leo a neque tempus dapibus vel rutrum arcu. Integer nec erat auctor augue faucibus rutrum in non mi. Maecenas at mi dui. Nulla non porta magna. Pellentesque ac sapien vel tortor vehicula semper. Proin molestie orci non varius viverra. Nulla facilisis purus eros, quis ullamcorper dolor mattis sit amet. Cras condimentum nisl sed est convallis congue.<a href="">Kod</a><a href="">Live</a>.
+
+                    </div>
                 </div>
             </div>
             <div class="portfolioExamples">
                 <div class="img" id="pic3">
-                    <span class="desc"></span>
+                    <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae turpis diam. Vivamus ut sagittis magna. Cras velit mauris, tristique ut laoreet et, tincidunt suscipit elit. Mauris eget leo a neque tempus dapibus vel rutrum arcu. Integer nec erat auctor augue faucibus rutrum in non mi. Maecenas at mi dui. Nulla non porta magna. Pellentesque ac sapien vel tortor vehicula semper. Proin molestie orci non varius viverra. Nulla facilisis purus eros, quis ullamcorper dolor mattis sit amet. Cras condimentum nisl sed est convallis congue.<a href="">Kod</a><a href="">Live</a>
+
+                    </div>
                 </div>
             </div>
             <div class="portfolioExamples">
                 <div class="img" id="pic4">
-                    <span class="desc"></span>
+                    <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae turpis diam. Vivamus ut sagittis magna. Cras velit mauris, tristique ut laoreet et, tincidunt suscipit elit. Mauris eget leo a neque tempus dapibus vel rutrum arcu. Integer nec erat auctor augue faucibus rutrum in non mi. Maecenas at mi dui. Nulla non porta magna. Pellentesque ac sapien vel tortor vehicula semper. Proin molestie orci non varius viverra. Nulla facilisis purus eros, quis ullamcorper dolor mattis sit amet. Cras condimentum nisl sed est convallis congue.<a href="">Kod</a><a href="">Live</a>
+
+                    </div>
                 </div>
             </div>
             <div class="portfolioExamples">
                 <div class="img" id="pic5">
-                    <span class="desc"></span>
+                    <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae turpis diam. Vivamus ut sagittis magna. Cras velit mauris, tristique ut laoreet et, tincidunt suscipit elit. Mauris eget leo a neque tempus dapibus vel rutrum arcu. Integer nec erat auctor augue faucibus rutrum in non mi. Maecenas at mi dui. Nulla non porta magna. Pellentesque ac sapien vel tortor vehicula semper. Proin molestie orci non varius viverra. Nulla facilisis purus eros, quis ullamcorper dolor mattis sit amet. Cras condimentum nisl sed est convallis congue. <a href="">Kod</a><a href="">Live</a>
+
+                    </div>
                 </div>
             </div>
             <div class="portfolioExamples">
                 <div class="img" id="pic6">
-                    <span class="desc"></span>
+                    <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae turpis diam. Vivamus ut sagittis magna. Cras velit mauris, tristique ut laoreet et, tincidunt suscipit elit. Mauris eget leo a neque tempus dapibus vel rutrum arcu. Integer nec erat auctor augue faucibus rutrum in non mi. Maecenas at mi dui. Nulla non porta magna. Pellentesque ac sapien vel tortor vehicula semper. Proin molestie orci non varius viverra. Nulla facilisis purus eros, quis ullamcorper dolor mattis sit amet. Cras condimentum nisl sed est convallis congue. <a href="">Kod</a><a href="">Live</a>
+
+                    </div>
                 </div>
             </div>
             <div class="portfolioExamples">
                 <div class="img" id="pic7">
-                    <span class="desc"></span>
+                    <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae turpis diam. Vivamus ut sagittis magna. Cras velit mauris, tristique ut laoreet et, tincidunt suscipit elit. Mauris eget leo a neque tempus dapibus vel rutrum arcu. Integer nec erat auctor augue faucibus rutrum in non mi. Maecenas at mi dui. Nulla non porta magna. Pellentesque ac sapien vel tortor vehicula semper. Proin molestie orci non varius viverra. Nulla facilisis purus eros, quis ullamcorper dolor mattis sit amet. Cras condimentum nisl sed est convallis congue. <a href="">Kod</a><a href="">Live</a>
+
+                    </div>
                 </div>
             </div>
             <div class="portfolioExamples">
                 <div class="img" id="pic8">
-                    <span class="desc"></span>
+                    <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae turpis diam. Vivamus ut sagittis magna. Cras velit mauris, tristique ut laoreet et, tincidunt suscipit elit. Mauris eget leo a neque tempus dapibus vel rutrum arcu. Integer nec erat auctor augue faucibus rutrum in non mi. Maecenas at mi dui. Nulla non porta magna. Pellentesque ac sapien vel tortor vehicula semper. Proin molestie orci non varius viverra. Nulla facilisis purus eros, quis ullamcorper dolor mattis sit amet. Cras condimentum nisl sed est convallis congue. <a href="">Kod</a><a href="">Live</a>
+
+                    </div>
                 </div>
             </div>
             <div class="portfolioExamples">
                 <div class="img" id="pic9">
-                    <span class="desc"></span>
+                    <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae turpis diam. Vivamus ut sagittis magna. Cras velit mauris, tristique ut laoreet et, tincidunt suscipit elit. Mauris eget leo a neque tempus dapibus vel rutrum arcu. Integer nec erat auctor augue faucibus rutrum in non mi. Maecenas at mi dui. Nulla non porta magna. Pellentesque ac sapien vel tortor vehicula semper. Proin molestie orci non varius viverra. Nulla facilisis purus eros, quis ullamcorper dolor mattis sit amet. Cras condimentum nisl sed est convallis congue. <a href="">Kod</a><a href="">Live</a>
+
+                    </div>
                 </div>
             </div>
             <div class="portfolioExamples">
                 <div class="img" id="pic10">
-                    <span class="desc"></span>
+                    <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae turpis diam. Vivamus ut sagittis magna. Cras velit mauris, tristique ut laoreet et, tincidunt suscipit elit. Mauris eget leo a neque tempus dapibus vel rutrum arcu. Integer nec erat auctor augue faucibus rutrum in non mi. Maecenas at mi dui. Nulla non porta magna. Pellentesque ac sapien vel tortor vehicula semper. Proin molestie orci non varius viverra. Nulla facilisis purus eros, quis ullamcorper dolor mattis sit amet. Cras condimentum nisl sed est convallis congue. <a href="">Kod</a><a href="">Live</a>
+
+                    </div>
                 </div>
             </div>
             <div class="portfolioExamples">
                 <div class="img" id="pic11">
-                    <span class="desc"></span>
+                    <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae turpis diam. Vivamus ut sagittis magna. Cras velit mauris, tristique ut laoreet et, tincidunt suscipit elit. Mauris eget leo a neque tempus dapibus vel rutrum arcu. Integer nec erat auctor augue faucibus rutrum in non mi. Maecenas at mi dui. Nulla non porta magna. Pellentesque ac sapien vel tortor vehicula semper. Proin molestie orci non varius viverra. Nulla facilisis purus eros, quis ullamcorper dolor mattis sit amet. Cras condimentum nisl sed est convallis congue. <a href="">Kod</a><a href="">Live</a>
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -175,6 +214,7 @@
     <script src="js/app.js"></script>
     <script src="js/three.r92.min.js"></script>
     <script src="js/vanta.net.min.js"></script>
+<!--
     <script>
         VANTA.NET({
             el: "#home",
@@ -186,9 +226,11 @@
         })
 
     </script>
+-->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
+
     </script>
     <script src="counter/Counter-Up-master/jquery.counterup.js"></script>
     <script src="counter/imakewebthings-waypoints-34d9f6d/lib/jquery.waypoints.js"></script>

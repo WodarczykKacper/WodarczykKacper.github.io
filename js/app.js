@@ -70,28 +70,7 @@ function smoothScroll() {
         } // End if
     });
 };
-//
-//
-//function openMenu() {
-//    let list = document.querySelector('header ul');
-//    let menu = document.getElementById('menu-burger');
-//    menu.addEventListener('click', function () {
-//        list.classList.toggle('openMenu');
-//    })
-//}
-//
-//function burger(){
-//    const firLine = document.getElementById('fline');
-//    const secLine = document.getElementById('sline');
-//    const thiLine = document.getElementById('tline');
-//    const burger = document.getElementById('menu-burger');
-//    
-//    burger.addEventListener('click', function(){
-//        firLine.classList.toggle('gofirst');
-//        secLine.classList.toggle('gosecond');
-//        thiLine.classList.toggle('gothird');
-//    })
-//}
+
 //function nav(){
 //    const load = document.getElementById('loading');
 //    const bo = Math.round(pageYOffset / (document.documentElement.offsetHeight - window.outerHeight) * 100);
@@ -100,4 +79,35 @@ function smoothScroll() {
 //
 //window.addEventListener('scroll', nav);
 //window.addEventListener('scroll', showArrow);
+
+document.addEventListener("DOMContentLoaded", function () {
+    openMenu();
+        burger();
+});
+
+
+function openMenu() {
+    let list = document.querySelector('header ul');
+    let menu = document.getElementById('menu-burger');
+    menu.addEventListener('click', function () {
+        list.classList.toggle('openMenu');
+    })
+}
+
+function burger(){
+    const firLine = document.getElementById('fline');
+    const secLine = document.getElementById('sline');
+    const thiLine = document.getElementById('tline');
+    const burger = document.getElementById('menu-burger');
+    
+    burger.addEventListener('click', function(){
+        firLine.classList.toggle('gofirst');
+        secLine.classList.toggle('gosecond');
+        thiLine.classList.toggle('gothird');
+    })
+}
+
+function isMobile() {
+return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
 

@@ -61,33 +61,31 @@ body {
     transform: scale(1.5);
 }
 
-/*
-.menuList:hover:before{
-    transform: translateY(-5px);
+header > #menu-burger {
+    display: none;
 }
 
-.menuList::before{
-    content: '';
-    width: 50px;
-    transition: all .5s ease-in-out;
-    position: absolute;
-    height: 1px;
-    background-color: black;
-}
-.menuList:hover:after{
-    transform: translateY(5px);
-}
-.menuList:after{
-      content: '';
-    width: 50px;
-    transition: all .5s ease-in-out;
-    position: absolute;
-    bottom:15%;
-    height: 1px;
-        background-color: black;
 
+.line {
+    width: 30px;
+    height: 4px;
+    background-color: #c5a059;
+    border: 2px solid #141414;
+    transition: 1s all ease-in-out;
 }
-*/
+
+.gofirst {
+    transform: translateY(8px) rotate(-45deg);
+}
+
+.gosecond {
+    opacity: 0;
+}
+
+.gothird {
+    transform: translateY(-8px) rotate(45deg);
+}
+
 
 h2 {
     text-align: center;
@@ -145,32 +143,6 @@ h1 {
     font-size: 50px;
 }
 
-/*
-.seeMore:hover {
-    cursor: pointer;
-}
-*/
-
-/*
-.seeMore::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    height: 0%;
-    background-color: black;
-    opacity: 0.5;
-    transition: 0.5s;
-}
-*/
-/*
-
-.seeMore:hover::before {
-    height: 100%;
-}
-*/
-
 #aboutMe {
     height: 100vh;
 }
@@ -183,13 +155,15 @@ h1 {
     flex-direction: row;
     overflow: hidden;
 }
-h3{
+
+h3 {
     font-size: 30px;
     color: black;
-    
+
 }
-.pAbout{
-        color: black;
+
+.pAbout {
+    color: black;
     margin: 5% 10%;
 }
 
@@ -201,10 +175,11 @@ h3{
     text-align: center;
 }
 
-.aboutBox i{
-    font-size:50px;
-    color:black;
+.aboutBox i {
+    font-size: 50px;
+    color: black;
 }
+
 #counter {
     height: 10vh;
     width: 100%;
@@ -213,7 +188,7 @@ h3{
     justify-content: space-around;
 }
 
-.num{
+.num {
     display: flex;
     flex-basis: 25%;
     align-items: center;
@@ -221,8 +196,9 @@ h3{
     justify-content: space-between;
     font-size: 20px;
 }
-.number{
-    font-size:40px;
+
+.number {
+    font-size: 40px;
     height: 5%;
 }
 
@@ -239,8 +215,8 @@ h3{
 
 .skill {
     flex-basis: 19%;
-/*    box-sizing: border-box;*/
-        border-top: 10px double #61dbfb;
+    /*    box-sizing: border-box;*/
+    border-top: 10px double #61dbfb;
     border-bottom: 10px double #61dbfb;
     border-radius: 20%;
     margin: 2%;
@@ -253,33 +229,47 @@ h3{
     overflow: hidden;
     transition: .5s all ease-in-out;
 }
-.skill:hover{
+
+.skill:hover {
     background-color: #61dbfb;
     cursor: pointer;
     color: transparent;
 }
-.skill img{
-        transition: .5s all ease-in-out;
+
+.skill img {
+    transition: .5s all ease-in-out;
 
 }
-.skill:hover img{
+
+.imgSkill {
+    margin-left: 25%;
+}
+
+.skill:hover img {
     transform: translateY(-100%)
 }
+
 .skill .ps {
     transition: .5s all ease-in-out;
 }
-.skill:hover .ps{
+
+.skill:hover .ps {
     transform: translateY(-300%);
 }
-/*
-.ps{
-    line-height: 20vh;
+
+.skill img:nth-of-type(3) {
+    margin-left: 25%;
 }
-.skill:hover .ps{
-    transform: translateY(100%);
+
+.skill img:nth-of-type(4) {
+    margin-left: 25%;
 }
-*/
-.ps{
+
+.skill img:nth-of-type(5) {
+    margin-left: 25%;
+}
+
+.ps {
     transform: translateY(100%);
     color: #CC7581;
     font-size: 15px;
@@ -304,16 +294,6 @@ h3{
     position: relative;
 }
 
-.portfolioExamples .img {
-    transition: 0.5s all ease-in-out;
-    opacity: 0.5;
-
-}
-
-.portfolioExamples:hover .img {
-    transform: scale(1.2);
-    opacity: 1;
-}
 
 .img {
     background-repeat: no-repeat;
@@ -323,28 +303,30 @@ h3{
     width: 100%;
 }
 
-/*
-.img::after {
-    content: '';
-    transition: 0.5s all ease-in-out;
-}
-*/
-.img .desc{
-     transition: 0.5s all ease-in-out;
+.desc {
     opacity: 0;
-}
-.img:hover .desc{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    opacity: 1;
     height: 100%;
-    background-color: #CC7581;
+    color: black;
     width: 100%;
-/*    transform: translateY(-20%)*/
+    transition: .5s all ease-in-out;
 }
 
+.desc .img {
+    transition: .5s all ease-in-out;
+}
 
+.img:hover .desc {
+    opacity: 1;
+    background: #C4415D;
+}
+
+.desc > a {
+    text-decoration: none;
+    font-size: 26px;
+    color: black;
+    width: 50%;
+    border-top: 2px solid black;
+}
 
 #pic1 {
     background-image: url(img/hala.png);
@@ -375,16 +357,18 @@ h3{
 }
 
 #pic8 {
-   background-image: url(img/cavnas%20collision.png);
+    background-image: url(img/cavnas%20collision.png);
 }
 
 #pic9 {
     background-image: url(img/canvas%20gravitation.png);
 }
-#pic10{
-background-image: url(img/budget.png);
+
+#pic10 {
+    background-image: url(img/budget.png);
 }
-#pic11{
+
+#pic11 {
     background-image: url(img/portfolio.png);
 }
 
@@ -393,26 +377,30 @@ background-image: url(img/budget.png);
     width: 100%;
     background: linear-gradient(#372d3b, #000);
 }
-h4{
+
+h4 {
     font-size: 40px;
     text-align: center;
     color: #fff;
     font-family: 'Thasadith', sans-serif;
     letter-spacing: 1px;
 }
-#contact{
+
+#contact {
     list-style: none;
     font-size: 26px;
     text-align: center;
-    color:white;
-    font-family: 'Thasadith',cursive;
+    color: white;
+    font-family: 'Thasadith', cursive;
     letter-spacing: 1px;
 
 }
-.cont{
+
+.cont {
     margin: 2%;
 }
-#otherContact{
+
+#otherContact {
     color: white;
     display: flex;
     list-style: none;
@@ -421,13 +409,15 @@ h4{
     font-family: 'Thasadith', sans-serif;
 
 }
-.social{    
+
+.social {
     font-size: 60px;
     border-top: 10px double #61dbfb;
     border-bottom: 10px double #61dbfb;
     transition: .5s all linear;
 }
-.social:hover{
+
+.social:hover {
     border-radius: 20%;
     border-top: 10px double #61dbfb;
     border-bottom: 10px double #61dbfb;
@@ -435,81 +425,128 @@ h4{
     border-left: none;
     cursor: pointer;
 }
-    
-@media (max-width: 424px) {
-    body {
-        margin: 0;
-        padding: 0;
-        width: 100%;
+
+@media (max-width:1025px) {
+    #home {
+        height: 100vh;
     }
 
+    #menu {
+        margin: 0;
+    }
+
+    #menu .menuList {
+        margin-right: 0;
+        font-size: 35px;
+        line-height: 7vh;
+    }
+
+    h1 {
+        margin-top: 25%;
+        font-size: 3em;
+    }
+
+    .pAbout {
+        font-size: 23px;
+    }
+
+    .skill img {
+        transform: scale(.8);
+    }
+
+    .imgSkill {
+        margin-left: 0;
+    }
+
+    .skill img:last-of-child {
+        margin-top: 20%;
+    }
+
+    #footer {
+        height: 50vh;
+    }
+
+    #contact {
+        font-size: 30px;
+    }
+}
+
+@media (max-width:926px) {
     #header {
-        display: none;
+        background: transparent;
+    }
+
+    #header > #menu-burger {
+        position: absolute;
+        right: 3%;
+        top: 25%;
+        display: block;
+    }
+
+    #header > ul.openMenu {
+        display: block;
+        margin: 0;
+        position: absolute;
+        /*        left: -11%;*/
+        width: 100%;
+        text-align: center;
+        background-color: #1D615C;
     }
 
     #menu {
         display: none;
     }
 
-    h1 {
-        font-size: 34px;
-        padding-top: 15%;
-        letter-spacing: 10px;
-    }
-
     #home {
-        height: 110vh;
+        height: 100vh;
     }
 
     .seeMore {
-        top: 60%;
-        margin: 0;
-        left: 25%;
-        right: 25%;
-        width: 50%;
-        font-size: 25px;
-        line-height: 40px;
+        left: 10%;
+        right: 10%;
+        width: 80%;
+        font-size: 48px;
+        line-height: 20vh;
+        height: 20%;
     }
-
     #aboutMe {
-        height: 150vh;
-    }
-
-    #aboutWrapper {
-        height: 150vh;
-    }
-
-    .aboutBox {
-        flex-basis: 100%;
-        height: 55vh;
-    }
-    h3{
-margin-top: 2%;}
-    .aboutBox > p{
-        margin:0% 5%;
-    }
-
-    #counter {
+    height: 310vh;
+}
+    #counter{
         display: none;
     }
-
-    #skills {
-        height: 100vh;
-        margin-top: 20vh;
+    #aboutWrapper{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        height: 300vh;
+    }
+    .pAbout{
+        letter-spacing: 1px;
+    }
+    #skills{
+        height: 165vh;
     }
 
-    #skillWraper {}
-
+    #skillWraper{
+        justify-content: space-around;
+    }
+    .skill{
+        flex-basis: 30%;
+    }
     .portfolioExamples {
-        flex-basis: 50%;
-        justify-content: center;
+    flex-basis: 100%;
+        height: 25vh;
     }
-
-    #socials {
-        margin-left: -14%;
-        margin-top: 10%;
-        height: 200px;
-        width: 200px;
-        transform: scale(0.65);
+    #projects {
+    height: 290vh;
+}
+    #contact {
+        font-size: 23px;
     }
+    #otherContact {
+    justify-content: left;
+    }
+    #footer {
+    height: 100vh;
+}
 }
