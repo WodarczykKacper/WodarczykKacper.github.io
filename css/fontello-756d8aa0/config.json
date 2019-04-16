@@ -1,0 +1,40 @@
+{
+  "name": "",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "4d3a91e6b0db6e03acaa74a861e2ab95",
+      "css": "desktop",
+      "code": 59393,
+      "src": "typicons"
+    },
+    {
+      "uid": "e45a44236f3f1ac013a1287bb60cd965",
+      "css": "flow-cross",
+      "code": 59394,
+      "src": "typicons"
+    },
+    {
+      "uid": "9e717a7080503cfe84c7c7bd336ffe5f",
+      "css": "wrench-outline",
+      "code": 59395,
+      "src": "typicons"
+    },
+    {
+      "uid": "gz5flrq210wzbyafnerm4e0aublo7qwb",
+      "css": "mobile",
+      "code": 59396,
+      "src": "typicons"
+    },
+    {
+      "uid": "85046e7e5a2fe685961d1423fcda0649",
+      "css": "chart-outline",
+      "code": 59397,
+      "src": "typicons"
+    }
+  ]
+}

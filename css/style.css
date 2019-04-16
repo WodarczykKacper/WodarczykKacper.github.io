@@ -111,7 +111,6 @@ h2 {
     margin-right: 11%;
     margin-top: 10%;
     letter-spacing: 5px;
-    color: #b4a048;
     color: white;
     font-family: 'Orbitron', sans-serif;
     font-weight: 200;
@@ -135,8 +134,8 @@ h1 {
     left: 35%;
     right: 35%;
     width: 30%;
-    border-top: 10px double#CC7581;
-    border-bottom: 10px double#CC7581;
+    border-top: 10px double #CC7581;
+    border-bottom: 10px double #CC7581;
     border-radius: 25%;
     color: #CC7581;
     cursor: pointer;
@@ -195,13 +194,17 @@ h3{
 }
 
 .aboutBox {
-    height: 50vh;
+    height: 60vh;
     flex-basis: 33.33%;
     flex-direction: row;
     background-color: #c4415d;
     text-align: center;
 }
 
+.aboutBox i{
+    font-size:50px;
+    color:black;
+}
 #counter {
     height: 10vh;
     width: 100%;
@@ -328,13 +331,14 @@ h3{
 */
 .img .desc{
      transition: 0.5s all ease-in-out;
-    height: 0%;
+    opacity: 0;
 }
 .img:hover .desc{
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 30%;
+    opacity: 1;
+    height: 100%;
     background-color: #CC7581;
     width: 100%;
 /*    transform: translateY(-20%)*/
@@ -387,10 +391,50 @@ background-image: url(img/budget.png);
 #footer {
     height: 90vh;
     width: 100%;
-    background: linear-gradient(#372d3b, #CC7581);
-    position: relative;
+    background: linear-gradient(#372d3b, #000);
 }
-    
+h4{
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Thasadith', sans-serif;
+    letter-spacing: 1px;
+}
+#contact{
+    list-style: none;
+    font-size: 26px;
+    text-align: center;
+    color:white;
+    font-family: 'Thasadith',cursive;
+    letter-spacing: 1px;
+
+}
+.cont{
+    margin: 2%;
+}
+#otherContact{
+    color: white;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    margin: 0% 10%;
+    font-family: 'Thasadith', sans-serif;
+
+}
+.social{    
+    font-size: 60px;
+    border-top: 10px double #61dbfb;
+    border-bottom: 10px double #61dbfb;
+    transition: .5s all linear;
+}
+.social:hover{
+    border-radius: 20%;
+    border-top: 10px double #61dbfb;
+    border-bottom: 10px double #61dbfb;
+    border-right: none;
+    border-left: none;
+    cursor: pointer;
+}
     
 @media (max-width: 424px) {
     body {
