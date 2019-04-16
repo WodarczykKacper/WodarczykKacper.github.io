@@ -135,9 +135,10 @@ h1 {
     left: 35%;
     right: 35%;
     width: 30%;
-    border: 10px double #CC7581;
+    border-top: 10px double#CC7581;
+    border-bottom: 10px double#CC7581;
+    border-radius: 25%;
     color: #CC7581;
-    background-color: black;
     cursor: pointer;
     text-align: center;
     height: 15%;
@@ -205,20 +206,21 @@ h3{
     height: 10vh;
     width: 100%;
     margin-top: -10vh;
+    display: flex;
+    justify-content: space-around;
 }
 
-#counter > .counterP {
-    width: 24%;
-    margin-bottom: 3%;
-        font-size: 19px;
-    text-align: center;
-    display: inline-block;
+.num{
+    display: flex;
+    flex-basis: 25%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 20px;
 }
-
-.number {
-    width: 25%;
-    margin: 11%;
-    font-size: 30px;
+.number{
+    font-size:40px;
+    height: 5%;
 }
 
 #skills {
@@ -235,7 +237,9 @@ h3{
 .skill {
     flex-basis: 19%;
 /*    box-sizing: border-box;*/
-    border: 10px double #61dbfb;
+        border-top: 10px double #61dbfb;
+    border-bottom: 10px double #61dbfb;
+    border-radius: 20%;
     margin: 2%;
     height: 20vh;
     justify-content: center;
@@ -251,11 +255,18 @@ h3{
     cursor: pointer;
     color: transparent;
 }
+.skill img{
+        transition: .5s all ease-in-out;
+
+}
+.skill:hover img{
+    transform: translateY(-100%)
+}
 .skill .ps {
     transition: .5s all ease-in-out;
 }
 .skill:hover .ps{
-    transform: translateY(-200%);
+    transform: translateY(-300%);
 }
 /*
 .ps{
