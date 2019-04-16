@@ -642,12 +642,29 @@ h4 {
     #otherContact{
     }
     #footer {
-    height: 95vh;
+    height: 100vh;
 }
 }
 @media (max-width:392px) {
-    
+    .txt-type {
+    left: 4%;
+}
+    #aboutMe {
+    height: 365vh;
+}
+    #aboutWrapper {
+    height: 350vh;
+}
+    .seeMore {
+    font-size: 42px;
+}
+    #otherContact {
+    justify-content: center;
+}
 }
 @media (max-width:346px) {
+    
+}
+@media (max-width:307px) {
     
 }
