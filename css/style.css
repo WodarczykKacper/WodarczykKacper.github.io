@@ -69,7 +69,7 @@ header > #menu-burger {
 .line {
     width: 30px;
     height: 4px;
-    background-color: #c5a059;
+    background-color: #61dbfb;
     border: 2px solid #141414;
     transition: 1s all ease-in-out;
 }
@@ -452,6 +452,7 @@ h4 {
     right: 30%;
     width: 40%;
     line-height: 110px;
+        background: black;
 }
     .pAbout {
         font-size: 23px;
@@ -496,7 +497,7 @@ h4 {
     #header > #menu-burger {
         position: absolute;
         right: 3%;
-        top: 25%;
+        top: 30%;
         display: block;
     }
 
@@ -570,7 +571,7 @@ h4 {
     .seeMore {
     top: 60%;
     }
-}
+
     #home {
     margin-top: -5vh
     }
@@ -601,14 +602,19 @@ h4 {
     }
 }
 @media (max-width:487px) {
-    
+    #home {
+    margin-top: -6vh;
+}
+    h1 {
+    font-size: 3.5em;
+}
 .seeMore {
     left: 10%;
     right: 10%;
     width: 80%;
     }
     .txt-type {
-    left: 3%;
+    left: 7%;
     }
     #aboutMe {
 /*    height: 215vh;*/
@@ -667,6 +673,7 @@ h4 {
 }
     h4 {
     font-size: 36px;
+        padding: 0% 5%;
     }
     #contact {
         font-size: 23px;
@@ -678,28 +685,32 @@ h4 {
 }
 }
 @media (max-width:392px) {
-    .txt-type {
-    left: 4%;
+   .txt-type {
+    left: 7%;
+    font-size: 40px;
 }
     #home {
     margin-top: -6vh;
 }
     #aboutMe {
-    height: 365vh;
+    height: 370vh;
 }
     #aboutWrapper {
-    height: 350vh;
+    height: 360vh;
 }
     .seeMore {
-    font-size: 42px;
+    font-size: 40px;
 }
     #otherContact {
     justify-content: center;
 }
+    #footer {
+    height: auto;
+}
 }
 @media (max-width:346px) {
-    h1 {
-    font-size: 2em;
+    .txt-type {
+    font-size: 32px;
 }
     #home {
     margin-top: -4vh;
@@ -711,15 +722,50 @@ h4 {
     .seeMore {
     font-size: 36px;
 }
+    .pAbout{
+        font-size: 19px;
+    }
     #contact {
     font-size: 19px;
 }
+    .social{
+        font-size: 54px;
+    }
 }
 @media (max-width:307px) {
     .social{
         font-size: 50px;
     }
+    #home {
+    margin-top: -8vh;
+}
+    .pAbout {
+    font-size: 18px;
+}
     .seeMore {
     font-size: 33px;
 }
+    #projects {
+    height: 300vh;
+}
+}
+@media (max-width:282px) {
+    .txt-type {
+    font-size: 28px;
+}
+    .seeMore {
+    font-size: 30px;
+}
+    #contact {
+    font-size: 15px;
+}
+    .social {
+    font-size: 45px;
+}
+    h4 {
+    font-size: 29px;
+}
+    .pAbout {
+    font-size: 17px;
+    }
 }
