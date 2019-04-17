@@ -20,6 +20,7 @@ body {
     transition: 0.5s all ease-in-out;
 }
 
+
 #menu {
     display: flex;
     margin-left: 35%;
@@ -91,6 +92,27 @@ h2 {
     text-align: center;
     font-size: 3em;
 }
+ .arr {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        clip-path: polygon(50% 0, 100% 50%, 100% 100%, 50% 69%, 0 100%, 0 50%);
+        bottom: -120px;
+        right: 5%;
+        transition: all 0.4s;
+        z-index: 22222;
+     background:linear-gradient(#CC7581, #61dbfb);
+    }
+    .arr a {
+        transform: translateY(180deg);
+    }
+  .arr i {
+        transform: translateY(180deg);
+    }
+
+    .arr.scrolled {
+        bottom: 50px;
+    }
 
 #home {
     height: 100vh;
@@ -571,6 +593,15 @@ h4 {
     #projects {
     height: 140vh;
 }
+    .desc{
+        opacity: 1;
+    height: 30%;
+    background: #C4415D;
+        background:linear-gradient(to right, #CC7581, #61dbfb);
+    }
+    .desc > a{
+        line-height: 7vh;
+    }
     #contact {
         font-size: 28px;
         margin: 10% 0%;
@@ -804,6 +835,9 @@ h4 {
     .social {
     font-size: 45px;
 }
+    h2{
+        font-size: 2.5em;
+    }
     h4 {
     font-size: 29px;
 }

@@ -106,8 +106,15 @@ function burger(){
         thiLine.classList.toggle('gothird');
     })
 }
+window.addEventListener('scroll', showArrow);
+function showArrow() {
+    var currentPosition = $(this).scrollTop();
+    var distance = $('#home').offset().top;
 
-function isMobile() {
-return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    if (currentPosition > distance) {
+        $('.arr').addClass('scrolled');
+    } else {
+        $('.arr').removeClass('scrolled');
+    }
+    
 }
-
