@@ -13,11 +13,11 @@ class TypeWriter {
 TypeWriter.prototype.type = function () {
     const current = this.wordIndex % this.words.length;
     const fullTxt = this.words[current];
-    
-    if(this.isStarting){
-        this.txt = fullTxt.substring(0,this.txt.length + 1)
+
+    if (this.isStarting) {
+        this.txt = fullTxt.substring(0, this.txt.length + 1)
     }
-    
+
     this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
 
     setTimeout(() => this.type(), 100)
@@ -36,17 +36,18 @@ function init() {
 
 document.addEventListener('scroll', headerBG);
 
-function headerBG(){
+function headerBG() {
     const header = document.getElementById('header');
     let scrollPos = window.scrollY;
-    if(scrollPos>0){
+    if (scrollPos > 0) {
         header.style.height = '8vh';
-    }else{
+    } else {
         header.style.height = '0vh';
     }
 }
 
 smoothScroll();
+
 function smoothScroll() {
     $("a").on('click', function (event) {
 
@@ -82,7 +83,7 @@ function smoothScroll() {
 
 document.addEventListener("DOMContentLoaded", function () {
     openMenu();
-        burger();
+    burger();
 });
 
 
@@ -94,19 +95,20 @@ function openMenu() {
     })
 }
 
-function burger(){
+function burger() {
     const firLine = document.getElementById('fline');
     const secLine = document.getElementById('sline');
     const thiLine = document.getElementById('tline');
     const burger = document.getElementById('menu-burger');
-    
-    burger.addEventListener('click', function(){
+
+    burger.addEventListener('click', function () {
         firLine.classList.toggle('gofirst');
         secLine.classList.toggle('gosecond');
         thiLine.classList.toggle('gothird');
     })
 }
 window.addEventListener('scroll', showArrow);
+
 function showArrow() {
     var currentPosition = $(this).scrollTop();
     var distance = $('#home').offset().top;
@@ -116,5 +118,5 @@ function showArrow() {
     } else {
         $('.arr').removeClass('scrolled');
     }
-    
+
 }
