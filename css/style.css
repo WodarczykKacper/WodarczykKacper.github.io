@@ -316,7 +316,7 @@ h3 {
 }
 
 .img:hover .desc {
-    opacity: 1;
+    opacity:1;
     background: #C4415D;
 }
 
@@ -474,7 +474,7 @@ h4 {
     }
 
     .imgSkill {
-        margin-left: 0;
+        margin-left: 15%;
     }
      #counter{
         display: none;
