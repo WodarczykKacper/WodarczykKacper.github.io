@@ -659,7 +659,7 @@ h4 {
     height: 300vh;
 }
     #menu .menuList {
-      left: -14%;
+      left: -15%;
     }
     #aboutWrapper {
     height: 285vh;
@@ -714,6 +714,9 @@ h4 {
     #aboutMe {
     height: 370vh;
 }
+    #menu .menuList {
+    font-size: 36px;
+}
     #aboutWrapper {
     height: 360vh;
 }
@@ -735,14 +738,17 @@ h4 {
     font-size: 32px;
 }
     #home {
-    margin-top: -4vh;
+    margin-top: -7vh;
 }
     #header > ul.openMenu {
-        left: -14%;
+        left: -16%;
     }
     .txt-type {
     left: 10%;
     top: 10%;
+}
+      #menu .menuList {
+    font-size: 33px;
 }
     .seeMore {
     font-size: 36px;
