@@ -402,6 +402,7 @@ h4 {
 
 .cont {
     margin: 2%;
+        font-style: italic;
 }
 
 #otherContact {
@@ -426,6 +427,7 @@ h4 {
     border-top: 10px double #61dbfb;
     border-bottom: 10px double #61dbfb;
     border-right: none;
+    color:#CC7581;
     border-left: none;
     cursor: pointer;
 }
@@ -513,12 +515,13 @@ h4 {
     }
 
     #header > ul.openMenu {
-        display: block;
+        display: inline-block;
         margin: 0;
         position: absolute;
-        left: -11%;
-    width: 109%;
-            opacity: .9;
+        left: 0%;
+        width: 100%;
+        padding-left: 0;
+        opacity: .9;
         text-align: center;
         background-color:  #61dbfb;
     }
@@ -746,7 +749,7 @@ h4 {
     margin-top: -7vh;
 }
     #header > ul.openMenu {
-        left: -16%;
+/*        left: -16%;*/
     }
     .txt-type {
     left: 10%;
