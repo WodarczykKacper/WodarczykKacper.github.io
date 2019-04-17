@@ -277,7 +277,7 @@ h3 {
 }
 
 #projects {
-    height: 130vh;
+    height: 145vh;
 }
 
 #projectsWrapper {
@@ -442,7 +442,7 @@ h4 {
     }
 
     h1 {
-        margin-top: 25%;
+        padding-top: 25%;
         font-size: 4em;
     }
 
@@ -566,10 +566,38 @@ h4 {
 }
 }
 @media (max-width:728px) {
+    .seeMore {
+    top: 60%;
+    }
+}
+    #home {
+    margin-top: -5vh
+    }
+    #aboutMe {
+    height: auto;
+}
+    #skills {
+    height: auto;
+}
     
 }
 @media (max-width:564px) {
+    #home {
+    height: 100vh;
+    margin-top: -8vh;
+    width: 100%;
+}
+    h1 {
+    font-size: 3.5em;
+}
     
+
+    #aboutWrapper{
+        height: auto;
+    }
+.txt-type {
+    margin-top: 0;
+    }
 }
 @media (max-width:487px) {
     
@@ -582,13 +610,15 @@ h4 {
     left: 3%;
     }
     #aboutMe {
-    height: 215vh;
+/*    height: 215vh;*/
 }
     #aboutWrapper {
-    height: 200vh;
+/*    height: 200vh;*/
+        height: auto;
     }
     #skills {
     height: 160vh;
+    height: auto;
 }
     .skill {
     flex-basis: 33%;
@@ -609,6 +639,7 @@ h4 {
     left: 10%;
     right: 10%;
     width: 80%;
+        font-size:44px;
     }
     #aboutMe {
     height: 300vh;
@@ -649,6 +680,9 @@ h4 {
     .txt-type {
     left: 4%;
 }
+    #home {
+    margin-top: -6vh;
+}
     #aboutMe {
     height: 365vh;
 }
@@ -663,7 +697,22 @@ h4 {
 }
 }
 @media (max-width:346px) {
-    
+    h1 {
+    font-size: 2em;
+}
+    #home {
+    margin-top: -4vh;
+}
+    .txt-type {
+    left: 10%;
+    top: 10%;
+}
+    .seeMore {
+    font-size: 36px;
+}
+    #contact {
+    font-size: 19px;
+}
 }
 @media (max-width:307px) {
     
