@@ -342,10 +342,12 @@ clip-path: polygon(0 0, 100% 25%, 100% 0);}
 }
 
 .ps {
+/*
     transform: translateY(100%);
     color: #CC7581;
     font-size: 15px;
     line-height: 3vh;
+*/
 }
 
 #projects {
