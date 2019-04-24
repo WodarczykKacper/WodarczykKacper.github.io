@@ -93,6 +93,7 @@ function openMenu() {
     menu.addEventListener('click', function () {
         list.classList.toggle('openMenu');
     })
+    
 }
 
 function burger() {
