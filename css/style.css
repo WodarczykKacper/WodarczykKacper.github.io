@@ -405,10 +405,10 @@ clip-path: polygon(0 0, 100% 25%, 100% 0);}
     line-height: 25vh;
     text-align: center;
 }
-
 #pic1 {
     background-image: url(img/hala.png);
 }
+
 
 #pic2 {
     background-image: url(img/moget.png);
